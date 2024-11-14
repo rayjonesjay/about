@@ -23,6 +23,8 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		page = "contact.html"
 	case "/projects":
 		page = "projects.html"
+	case "/services":
+		page = "services.html"
 	}
 
 	// Serve the appropriate HTML file

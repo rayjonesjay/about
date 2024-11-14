@@ -212,10 +212,49 @@ h2 {
     margin-bottom: 20px;
 }
 
-/*p {*/
-/*    margin-bottom: 20px;*/
-/*    font-size: 1.2em;*/
-/*}*/
+/* Existing styles... */
+
+p {
+    font-size: 1.2em;  /* Increase font size for <p> tags */
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+/* Styles for the Services Section */
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.service-box {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border-radius: 10px;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+}
+
+.service-box:hover {
+    transform: scale(1.05);  /* Slight zoom on hover */
+}
+
+.service-box h3 {
+    font-size: 1.3em;
+    color: #00ff00;
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    font-size: 1em;
+    color: #e0e0e0;
+}
 
 .social-links {
     display: flex;
