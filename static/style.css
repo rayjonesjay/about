@@ -1,23 +1,40 @@
-.nav-link {
-    color: #39ff14;
-    margin: 0 1em;
-    text-decoration: none;
-    font-weight: bold;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-.nav-link:hover {
-    color: #ff99cc;
+body {
+    font-size: 20px;
+    font-family: "Source Code Pro", monospace;
+    background-color: #121212;
+    color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
     padding: 1em;
-    text-align: center;
+    background-color: #1a1a1a;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     z-index: 10;
+}
+
+.nav-link {
+    color: #39ff14;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ff99cc;
 }
 
 header {
@@ -33,6 +50,31 @@ header h1 {
     color: #ff99cc;
 }
 
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 4px solid #39ff14; /* Neon green border */
+}
+
+main {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
 .section {
     padding: 5em 2em;
     margin-top: 2em;
@@ -42,9 +84,22 @@ header h1 {
 h2 {
     font-size: 2em;
     color: #39ff14;
+    margin-bottom: 20px;
 }
 
-/* Project Cards */
+h3 {
+    font-size: 1.3em;
+    color: #00ff00;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1.0em;
+    line-height: 1.2;
+    color: #fff5f5;
+    margin-bottom: 20px;
+}
+
 .project-card {
     background-color: #222;
     padding: 1.5em;
@@ -53,6 +108,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Typing Animation */
 #typewriter {
     overflow: hidden;
     white-space: nowrap;
@@ -69,135 +125,7 @@ h2 {
     50% { border-color: transparent; }
 }
 
-.profile-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-photo {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 4px solid #39ff14; /* Neon green border */
-}
-
-
-<!-- style my icons -->
-.icon {
-    width: 40px;
-    height: 40px;
-    margin: 10px;
-    transition: transform 0.3s;
-    /*color: white;*/
-}
-
-.icon:hover {
-    transform: scale(1.1);
-}
-
-.social-links {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-main {
-    padding: 2em;
-    max-width: 800px;
-    margin: auto;
-}
-
-p {
-    font-size: 20px;
-    color: #f0f0f0;
-    line-height: 1.5em;
-}
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
-body {
-    font-size: 20px;
-    font-family: AnjaliOldLipi;
-    background-color: #121212;
-    color: #f0f0f0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-}
-
-nav {
-    display: flex;
-    gap: 20px;
-    margin: 20px;
-}
-
-.nav-link {
-    color: #00ff00;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-#contact {
-    text-align: center;
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-h2, h3 {
-    color: #00ff00;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-label {
-    font-weight: bold;
-    color: #00ff00;
-}
-
-nav {
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-    background-color: #1e1e1e;
-    padding: 20px;
-    width: 100%;
-}
-
-.nav-link {
-    color: #00ff00;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.2s;
-}
-
-.nav-link:hover {
-    color: #f0f0f0;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    width: 100%;
-    padding: 40px 20px;
-}
-
+/* Contact Section */
 #contact {
     text-align: center;
     max-width: 600px;
@@ -207,27 +135,28 @@ main {
     box-shadow: 0px 14px 18px rgba(0, 0, 0, 0.5);
 }
 
-h2 {
-    color: #00ff00;
-    margin-bottom: 20px;
-}
-
-/* Existing styles... */
-
-p {
-    font-size: 1.2em;  /* Increase font size for <p> tags */
-    line-height: 1.6;
-    color: #e0e0e0;
-    margin-bottom: 20px;
-}
-
-/* Styles for the Services Section */
-#services {
+.social-links {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 40px 0;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+#services {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .service-box {
@@ -242,13 +171,7 @@ p {
 }
 
 .service-box:hover {
-    transform: scale(1.05);  /* Slight zoom on hover */
-}
-
-.service-box h3 {
-    font-size: 1.3em;
-    color: #00ff00;
-    margin-bottom: 15px;
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .service-box p {
@@ -256,18 +179,43 @@ p {
     color: #e0e0e0;
 }
 
-.social-links {
+form {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.icon {
-    width: 60px;
-    height: 60px;
-    transition: transform 0.2s;
+label {
+    font-weight: bold;
+    color: #00ff00;
 }
 
-.icon:hover {
-    transform: scale(1.1);
+/* Resume Page Timeline Styling */
+#resume-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.timeline-item {
+    background-color: #333;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.timeline-link {
+    font-size: 1.2rem;
+    color: #32CD32;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.timeline-link:hover {
+    color: #FF69B4;
+}
+
+.timeline-item p, .timeline-item span {
+    color: #cccccc;
+    font-size: 0.9rem;
 }

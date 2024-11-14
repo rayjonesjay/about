@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function(){
             if (i < text.length) {
                 writerElement.textContent += text[i];
                 i++;
-                setTimeout(type,100); //type speed
+                setTimeout(type,150); //type speed
             }else {
                 setTimeout(() => {
                     writerElement.textContent = "";

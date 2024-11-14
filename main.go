@@ -21,10 +21,12 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		page = "about.html"
 	case "/contact":
 		page = "contact.html"
-	case "/projects":
-		page = "projects.html"
+	//case "/projects":
+	//	page = "projects.html"
 	case "/services":
 		page = "services.html"
+	case "/resume":
+		page = "resume.html"
 	}
 
 	// Serve the appropriate HTML file
