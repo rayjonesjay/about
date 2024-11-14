@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+      - "80:80"     # Exposes port 80 to the host
+    restart: always # Ensures the container restarts if it crashes
+    environment:
+      - DOMAIN=rayjones.duckdns.org
