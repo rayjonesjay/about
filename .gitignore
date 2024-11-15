@@ -1,1 +1,5 @@
 .idea
+.vercel
+*_modules*
+*node_*
+
