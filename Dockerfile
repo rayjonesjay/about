@@ -1,18 +1,17 @@
-FROM golang:1.21 AS builder
+FROM golang:1.23.3 AS builder
 
 WORKDIR /app
 
-COPY go.mod go.sum ./
-RUN go mod download
+COPY go.mod .
 
 COPY . .
 
-RUN go build -o main .
+RUN GOARCH=amd64 go build -o main .
 
 FROM alpine:latest
 
 COPY --from=builder /app/main /main
 
-EXPOSE 80
+EXPOSE 9000
 
 CMD ["/main"]
