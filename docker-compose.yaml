@@ -3,7 +3,7 @@ services:
   web:
     build: .
     ports:
-      - "12004:80"     # Exposes port 80 to the host
+      - "12004:9090"     # Exposes port 9090 to the host
     restart: unless-stopped # Ensures the container restarts if it crashes
     environment:
       - DOMAIN=rayjones.duckdns.org

@@ -8,10 +8,6 @@ COPY . .
 
 RUN GOARCH=amd64 go build -o main .
 
-FROM alpine:latest
+EXPOSE 9090
 
-COPY --from=builder /app/main /main
-
-EXPOSE 9000
-
-CMD ["/main"]
+CMD ["/app/main"]

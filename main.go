@@ -41,6 +41,6 @@ func main() {
 	http.HandleFunc("/", handler)
 
 	// Start server on port 8080
-	log.Println("Starting server on http://localhost:8080")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Println("Starting server on http://localhost:9090")
+	log.Fatal(http.ListenAndServe(":9090", nil))
 }
