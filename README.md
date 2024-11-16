@@ -9,6 +9,7 @@ Run.
 `$ go run .`
 
 ### Link to where it is hosted.
+
 ```
-https://about-auazpdmel-rayjones-projects.vercel.app
+https://ramuiruri.devhive.buzz/
 ```
